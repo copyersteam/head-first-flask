@@ -41,6 +41,6 @@ def hello(user_name):
 
 现在，任何类似 `https://hello.com/<user_name>` 的 URL 都会映射到这个路由上，比如 `https://hello.com/ethan-funny`，`https://hello.com/torvalds`，访问这些 URL 都会执行上面的路由程序。
 
-也就是说，Flask 支持这种动态形式的路由，路由中的动态部分默认是字符串，像上面这种情况。当然，除了字符串，Flask 也支持在路由中使用 int、float，比如路由 /articles/<int:id> 只会匹配动态片段 id 为整数的 URL，例如匹配 https://hello.com/articles/100，https://hello.com/articles/101，但不匹配 https://hello.com/articles/the-first-article 这种 URL。
+也就是说，Flask 支持这种动态形式的路由，路由中的动态部分默认是字符串，像上面这种情况。当然，除了字符串，Flask 也支持在路由中使用 int、float，比如路由 `/articles/<int:id>` 只会匹配动态片段 id 为整数的 URL，例如匹配 https://hello.com/articles/100，https://hello.com/articles/101，但不匹配 https://hello.com/articles/the-first-article 这种 URL。
 
 
